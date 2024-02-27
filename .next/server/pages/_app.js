@@ -1,1 +1,340 @@
-(()=>{var e={};e.id=888,e.ids=[888],e.modules={3351:e=>{e.exports={main:"Layout_main__RMpyO"}},7579:e=>{e.exports={header:"MainNavigation_header__JBIUU",logo:"MainNavigation_logo__aeMOX",active:"MainNavigation_active__y3Fl_"}},6932:(e,r,i)=>{"use strict";i.r(r),i.d(r,{default:()=>x});var s=i(997);i(6764);var t=i(7579),n=i.n(t),a=i(1664),l=i.n(a);let c=function(){return(0,s.jsxs)("header",{className:n().header,children:[s.jsx("div",{className:n().logo,children:"React Meetups"}),s.jsx("nav",{children:(0,s.jsxs)("ul",{children:[s.jsx("li",{children:s.jsx(l(),{href:"/",children:"All Meetups"})}),s.jsx("li",{children:s.jsx(l(),{href:"/new-meetup",children:"Add New Meetup"})})]})})]})};var d=i(3351),u=i.n(d);let o=function(e){return(0,s.jsxs)("div",{children:[s.jsx(c,{}),s.jsx("main",{className:u().main,children:e.children})]})},x=function({Component:e,pageProps:r}){return s.jsx(o,{children:s.jsx(e,{...r})})}},6764:()=>{},2785:e=>{"use strict";e.exports=require("next/dist/compiled/next-server/pages.runtime.prod.js")},6689:e=>{"use strict";e.exports=require("react")},997:e=>{"use strict";e.exports=require("react/jsx-runtime")}};var r=require("../webpack-runtime.js");r.C(e);var i=e=>r(r.s=e),s=r.X(0,[348,664],()=>i(6932));module.exports=s})();
+(() => {
+var exports = {};
+exports.id = 888;
+exports.ids = [888];
+exports.modules = {
+
+/***/ 2631:
+/***/ ((module) => {
+
+// Exports
+module.exports = {
+	"main": "Layout_main__NgJgX"
+};
+
+
+/***/ }),
+
+/***/ 5314:
+/***/ ((module) => {
+
+// Exports
+module.exports = {
+	"header": "MainNavigation_header__WuiTa",
+	"logo": "MainNavigation_logo__oTonQ",
+	"active": "MainNavigation_active__eKPZi"
+};
+
+
+/***/ }),
+
+/***/ 4164:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  "default": () => (/* binding */ _app)
+});
+
+// EXTERNAL MODULE: external "react/jsx-runtime"
+var jsx_runtime_ = __webpack_require__(997);
+// EXTERNAL MODULE: ./components/layout/MainNavigation.module.css
+var MainNavigation_module = __webpack_require__(5314);
+var MainNavigation_module_default = /*#__PURE__*/__webpack_require__.n(MainNavigation_module);
+// EXTERNAL MODULE: ./node_modules/next/link.js
+var next_link = __webpack_require__(1664);
+var link_default = /*#__PURE__*/__webpack_require__.n(next_link);
+;// CONCATENATED MODULE: ./components/layout/MainNavigation.js
+
+
+
+function MainNavigation() {
+    return /*#__PURE__*/ (0,jsx_runtime_.jsxs)("header", {
+        className: (MainNavigation_module_default()).header,
+        children: [
+            /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                className: (MainNavigation_module_default()).logo,
+                children: "React Meetups"
+            }),
+            /*#__PURE__*/ jsx_runtime_.jsx("nav", {
+                children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("ul", {
+                    children: [
+                        /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                            children: /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
+                                href: "/",
+                                children: "All Meetups"
+                            })
+                        }),
+                        /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                            children: /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
+                                href: "/new-meetup",
+                                children: "Add New Meetup"
+                            })
+                        })
+                    ]
+                })
+            })
+        ]
+    });
+}
+/* harmony default export */ const layout_MainNavigation = (MainNavigation);
+
+// EXTERNAL MODULE: ./components/layout/Layout.module.css
+var Layout_module = __webpack_require__(2631);
+var Layout_module_default = /*#__PURE__*/__webpack_require__.n(Layout_module);
+;// CONCATENATED MODULE: ./components/layout/Layout.js
+
+
+
+function Layout(props) {
+    return /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+        children: [
+            /*#__PURE__*/ jsx_runtime_.jsx(layout_MainNavigation, {}),
+            /*#__PURE__*/ jsx_runtime_.jsx("main", {
+                className: (Layout_module_default()).main,
+                children: props.children
+            })
+        ]
+    });
+}
+/* harmony default export */ const layout_Layout = (Layout);
+
+;// CONCATENATED MODULE: ./pages/_app.js
+
+
+
+function MyApp({ Component , pageProps  }) {
+    return /*#__PURE__*/ jsx_runtime_.jsx(layout_Layout, {
+        children: /*#__PURE__*/ jsx_runtime_.jsx(Component, {
+            ...pageProps
+        })
+    });
+}
+/* harmony default export */ const _app = (MyApp);
+
+
+/***/ }),
+
+/***/ 3280:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/app-router-context.js");
+
+/***/ }),
+
+/***/ 2796:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/head-manager-context.js");
+
+/***/ }),
+
+/***/ 4014:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/i18n/normalize-locale-path.js");
+
+/***/ }),
+
+/***/ 8524:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/is-plain-object.js");
+
+/***/ }),
+
+/***/ 8020:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/mitt.js");
+
+/***/ }),
+
+/***/ 4406:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/page-path/denormalize-page-path.js");
+
+/***/ }),
+
+/***/ 4964:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/router-context.js");
+
+/***/ }),
+
+/***/ 1751:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/router/utils/add-path-prefix.js");
+
+/***/ }),
+
+/***/ 6220:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/router/utils/compare-states.js");
+
+/***/ }),
+
+/***/ 299:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/router/utils/format-next-pathname-info.js");
+
+/***/ }),
+
+/***/ 3938:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/router/utils/format-url.js");
+
+/***/ }),
+
+/***/ 9565:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/router/utils/get-asset-path-from-route.js");
+
+/***/ }),
+
+/***/ 5789:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/router/utils/get-next-pathname-info.js");
+
+/***/ }),
+
+/***/ 1897:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/router/utils/is-bot.js");
+
+/***/ }),
+
+/***/ 1428:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/router/utils/is-dynamic.js");
+
+/***/ }),
+
+/***/ 8854:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/router/utils/parse-path.js");
+
+/***/ }),
+
+/***/ 1292:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/router/utils/parse-relative-url.js");
+
+/***/ }),
+
+/***/ 4567:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/router/utils/path-has-prefix.js");
+
+/***/ }),
+
+/***/ 979:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/router/utils/querystring.js");
+
+/***/ }),
+
+/***/ 3297:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/router/utils/remove-trailing-slash.js");
+
+/***/ }),
+
+/***/ 6052:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/router/utils/resolve-rewrites.js");
+
+/***/ }),
+
+/***/ 4226:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/router/utils/route-matcher.js");
+
+/***/ }),
+
+/***/ 5052:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/router/utils/route-regex.js");
+
+/***/ }),
+
+/***/ 9232:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/utils.js");
+
+/***/ }),
+
+/***/ 6689:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("react");
+
+/***/ }),
+
+/***/ 997:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("react/jsx-runtime");
+
+/***/ })
+
+};
+;
+
+// load runtime
+var __webpack_require__ = require("../webpack-runtime.js");
+__webpack_require__.C(exports);
+var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
+var __webpack_exports__ = __webpack_require__.X(0, [676,664], () => (__webpack_exec__(4164)));
+module.exports = __webpack_exports__;
+
+})();

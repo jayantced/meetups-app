@@ -1,1 +1,53 @@
-"use strict";(()=>{var e={};e.id=958,e.ids=[958],e.modules={145:e=>{e.exports=require("next/dist/compiled/next-server/pages-api.runtime.prod.js")},6249:(e,t)=>{Object.defineProperty(t,"l",{enumerable:!0,get:function(){return function e(t,n){return n in t?t[n]:"then"in t&&"function"==typeof t.then?t.then(t=>e(t,n)):"function"==typeof t&&"default"===n?t:void 0}}})},8549:(e,t,n)=>{n.r(t),n.d(t,{config:()=>l,default:()=>d,routeModule:()=>P});var r={};n.r(r),n.d(r,{default:()=>s});var o=n(1802),i=n(7153),u=n(6249);let a=require("mongodb"),s=async function(e,t){if("POST"===e.method){let n=e.body,r=await a.MongoClient.connect("mongodb+srv://centuaryfox007:jay125665911@cluster0.ws6gqly.mongodb.net/meetups?retryWrites=true&w=majority"),o=r.db().collection("meetups");console.log(await o.insertOne(n)),r.close(),t.status(201).json({message:"Meetup inserted!"})}},d=(0,u.l)(r,"default"),l=(0,u.l)(r,"config"),P=new o.PagesAPIRouteModule({definition:{kind:i.x.PAGES_API,page:"/api/new-meetup",pathname:"/api/new-meetup",bundlePath:"",filename:""},userland:r})},7153:(e,t)=>{var n;Object.defineProperty(t,"x",{enumerable:!0,get:function(){return n}}),function(e){e.PAGES="PAGES",e.PAGES_API="PAGES_API",e.APP_PAGE="APP_PAGE",e.APP_ROUTE="APP_ROUTE"}(n||(n={}))},1802:(e,t,n)=>{e.exports=n(145)}};var t=require("../../webpack-api-runtime.js");t.C(e);var n=t(t.s=8549);module.exports=n})();
+"use strict";
+(() => {
+var exports = {};
+exports.id = 958;
+exports.ids = [958];
+exports.modules = {
+
+/***/ 5940:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  "default": () => (/* binding */ new_meetup)
+});
+
+;// CONCATENATED MODULE: external "mongodb"
+const external_mongodb_namespaceObject = require("mongodb");
+;// CONCATENATED MODULE: ./pages/api/new-meetup.js
+
+async function handler(req, res) {
+    if (req.method === "POST") {
+        const data = req.body;
+        // const { title, image, address, description } = data;
+        const client = await external_mongodb_namespaceObject.MongoClient.connect("mongodb+srv://centuaryfox007:jay125665911@cluster0.ws6gqly.mongodb.net/meetups?retryWrites=true&w=majority");
+        const db = client.db();
+        const meetupsCollection = db.collection("meetups");
+        const result = await meetupsCollection.insertOne(data);
+        console.log(result);
+        client.close();
+        res.status(201).json({
+            message: "Meetup inserted!"
+        });
+    }
+}
+/* harmony default export */ const new_meetup = (handler);
+
+
+/***/ })
+
+};
+;
+
+// load runtime
+var __webpack_require__ = require("../../webpack-api-runtime.js");
+__webpack_require__.C(exports);
+var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
+var __webpack_exports__ = (__webpack_exec__(5940));
+module.exports = __webpack_exports__;
+
+})();
