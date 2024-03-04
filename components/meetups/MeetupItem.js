@@ -15,13 +15,14 @@ function MeetupItem(props) {
   async function deleteMeetupsHandler() {
     setIsDeleting(true);
     try {
-      const response = await fetch(`/api/delete-meetup/`, {
+      const response = await fetch(`/api/delete-meetup/${props.id}`, {
         method: 'DELETE',
       });
 
       if (response.ok) {
         // Refresh the page to reflect changes
-        router.replace(router.asPath);
+        // router.replace(router.asPath);
+        console.log('success');
       } else {
         console.error('Failed to delete meetup:', response.statusText);
       }
