@@ -12,7 +12,7 @@ async function handler(req, res) {
       const db = client.db();
 
       const meetupsCollection = db.collection("meetups");
-      const result = await meetupsCollection.deleteOne({ _id: ObjectId(meetupId) });
+      const result = await meetupsCollection.deleteOne({ _id: new ObjectId(meetupId) });
 
       console.log(result); // Log the result of the deletion operation
 

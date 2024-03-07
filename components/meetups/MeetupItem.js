@@ -6,32 +6,32 @@ import classes from './MeetupItem.module.css';
 
 function MeetupItem(props) {
   const router = useRouter();
-  const [isDeleting, setIsDeleting] = useState(false);
+  // const [isDeleting, setIsDeleting] = useState(false);
 
   function showDetailsHandler() {
     router.push(`/${props.id}`);
   }
 
-  async function deleteMeetupsHandler() {
-    setIsDeleting(true);
-    try {
-      const response = await fetch(`/api/delete-meetup/${props.id}`, {
-        method: 'DELETE',
-      });
+  // async function deleteMeetupsHandler() {
+  //   setIsDeleting(true);
+  //   try {
+  //     const response = await fetch(`/api/delete-meetup/${props.id}`, {
+  //       method: 'DELETE',
+  //     });
 
-      if (response.ok) {
-        // Refresh the page to reflect changes
-        // router.replace(router.asPath);
-        console.log('success');
-      } else {
-        console.error('Failed to delete meetup:', response.statusText);
-      }
-    } catch (error) {
-      console.error('Failed to delete meetup:', error.message);
-    } finally {
-      setIsDeleting(false);
-    }
-  }
+  //     if (response.ok) {
+  //       // Refresh the page to reflect changes
+  //       // router.replace(router.asPath);
+  //       console.log('success');
+  //     } else {
+  //       console.error('Failed to delete meetup:', response.statusText);
+  //     }
+  //   } catch (error) {
+  //     console.error('Failed to delete meetup:', error.message);
+  //   } finally {
+  //     setIsDeleting(false);
+  //   }
+  // }
 
   return (
     <li className={classes.item}>
@@ -45,9 +45,9 @@ function MeetupItem(props) {
         </div>
         <div className={classes.actions}>
           <button onClick={showDetailsHandler}>Show Detail</button>
-          <button onClick={deleteMeetupsHandler} disabled={isDeleting}>
+          {/* <button onClick={deleteMeetupsHandler} disabled={isDeleting}>
             {isDeleting ? 'Deleting...' : 'Delete Meetup'}
-          </button>
+          </button> */}
         </div>
       </Card>
     </li>
